@@ -11,7 +11,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="w-[500px] h-[500px] rounded-full overflow-hidden justify-self-center">
           <img 
-            src="picture.png" 
+            src="/images/picture.png" 
             alt="Profile" 
             className="w-full h-full object-cover"
           />

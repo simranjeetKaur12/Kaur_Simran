@@ -31,7 +31,7 @@ export const Projects: React.FC = () => {
     {
       title: 'DeepPlateNet: License Plate Recognition',
       category: 'Computer Vision',
-      image: 'licenseplate.jpg',
+      image: '/images/licenseplate.jpg',
       description: 'Analyze the performance of various models for license plate recognition such as CNN, R-CNN, tesseract and easyOCR',
       tags: ['Computer Vision', 'YOLO', 'OpenCV', 'Python'],
       links: {
