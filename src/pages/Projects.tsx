@@ -24,7 +24,7 @@ export const Projects: React.FC = () => {
       description: 'Developed a Retrieval-Augmented Generation (RAG) based system for analyzing and extracting insights from medical documents. Integrated document embeddings, vector search, and LLM responses for contextual question answering.',
       tags: ['RAG', 'LLM', 'Vector Database', 'NLP'],
       links: {
-        live: 'https://example.com',
+        live: 'https://huggingface.co/spaces/Khalsa-12/ClinIQ-AI',
         github: 'https://github.com/simranjeetKaur12/ClinIQ-AI'
       }
     },
