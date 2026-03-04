@@ -82,7 +82,7 @@ export const MobileSocialBar: React.FC = () => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20 pointer-events-none'
       }`}
     >
-      <div className="bg-white/95 dark:bg-gray-800/95 backdrop-blur border border-gray-200 dark:border-gray-700 rounded-full shadow-lg px-2 py-1.5">
+      <div className="bg-amber-500 backdrop-blur border border-amber-500 dark:border-amber-500 rounded-full shadow-lg px-2 py-1.5">
         <div className="flex items-center justify-center gap-1">
           {items.map((item) => {
             if (item.action) {
