@@ -9,6 +9,7 @@ import { Certifications } from './pages/Certifications';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
 import { RightSidebar } from './components/RightSidebar';
+import { MobileSocialBar } from './components/MobileSocialBar';
 import { Footer } from './components/Footer';
 import { ThemeProvider } from './context/ThemeContext';
 
@@ -40,9 +41,10 @@ function App() {
         <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
         <Sidebar />
         <RightSidebar />
-        <main className="flex-grow container mx-auto px-4 py-8">
+        <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 pb-24 sm:pb-8">
           {renderPage()}
         </main>
+        <MobileSocialBar />
         <Footer />
       </div>
     </ThemeProvider>

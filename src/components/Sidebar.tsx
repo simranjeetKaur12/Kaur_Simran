@@ -30,7 +30,7 @@ export const Sidebar: React.FC = () => {
   ];
 
   return (
-    <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-10">
+    <div className="hidden xl:block fixed left-0 top-1/2 transform -translate-y-1/2 z-10">
       <div className="flex flex-col space-y-2">
         {socialLinks.map((link, index) => (
           <a
@@ -38,7 +38,7 @@ export const Sidebar: React.FC = () => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`p-3 bg-white dark:bg-gray-800 shadow-md rounded-r-md transition-all duration-300 flex items-center group text-gray-700 dark:text-gray-300 ${link.color}`}
+            className={`p-2.5 2xl:p-3 bg-white dark:bg-gray-800 shadow-md rounded-r-md transition-all duration-300 flex items-center group text-gray-700 dark:text-gray-300 ${link.color}`}
             aria-label={link.name}
           >
             <div className="flex items-center">

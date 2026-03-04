@@ -31,12 +31,12 @@ export const Certifications: React.FC = () => {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="flex items-center gap-3 mb-8 pb-4 border-b dark:border-gray-700">
+      <div className="flex items-center gap-3 mb-6 sm:mb-8 pb-4 border-b dark:border-gray-700">
         <Award className="w-8 h-8 text-amber-500" />
-        <h1 className="text-3xl font-bold">My Certifications</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold">My Certifications</h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
         {certifications.map((cert, index) => (
           <div key={index} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
             <div className="h-48 overflow-hidden">
@@ -47,8 +47,8 @@ export const Certifications: React.FC = () => {
               />
             </div>
             
-            <div className="p-6">
-              <h3 className="text-xl font-medium mb-2">{cert.title}</h3>
+            <div className="p-5 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-medium mb-2">{cert.title}</h3>
               <div className="space-y-2 mb-4">
                 <p className="text-gray-600 dark:text-gray-300">{cert.issuer}</p>
                 <p className="text-gray-500 dark:text-gray-400 text-sm">Issued: {cert.date}</p>

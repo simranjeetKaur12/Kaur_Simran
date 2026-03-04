@@ -62,11 +62,11 @@ export const Contact: React.FC = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-8 pb-4 border-b dark:border-gray-700">Get in Touch</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-4 border-b dark:border-gray-700">Get in Touch</h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
         {contactInfo.map((item, index) => (
-          <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm text-center">
+          <div key={index} className="bg-white dark:bg-gray-800 p-5 sm:p-6 rounded-lg shadow-sm text-center">
             <div className="flex justify-center mb-4">{item.icon}</div>
             <h3 className="font-medium mb-1">{item.title}</h3>
             <p className="text-gray-600 dark:text-gray-300">{item.info}</p>
@@ -74,8 +74,8 @@ export const Contact: React.FC = () => {
         ))}
       </div>
       
-      <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
-        <h2 className="text-2xl font-medium mb-6">Send Me a Message</h2>
+      <div className="bg-white dark:bg-gray-800 p-5 sm:p-8 rounded-lg shadow-sm">
+        <h2 className="text-xl sm:text-2xl font-medium mb-5 sm:mb-6">Send Me a Message</h2>
         
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">

@@ -27,9 +27,9 @@ export const About: React.FC = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-8 pb-4 border-b dark:border-gray-700">About Me</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-4 border-b dark:border-gray-700">About Me</h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 mb-12 sm:mb-16">
         <div>
           <h2 className="text-xl font-medium mb-4">My Journey</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -43,7 +43,7 @@ export const About: React.FC = () => {
           </p>
         </div>
         
-        <div className="rounded-lg overflow-hidden h-100">
+        <div className="rounded-lg overflow-hidden h-72 sm:h-80 md:h-full">
           <img 
             src="/images/aboutphoto.jpeg" 
             alt="AI Development" 
@@ -52,10 +52,10 @@ export const About: React.FC = () => {
         </div>
       </div>
       
-      <h2 className="text-2xl font-medium mb-8">My Expertise</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <h2 className="text-xl sm:text-2xl font-medium mb-6 sm:mb-8">My Expertise</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8">
         {skills.map((skill, index) => (
-          <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+          <div key={index} className="bg-white dark:bg-gray-800 p-5 sm:p-6 rounded-lg shadow-sm">
             <div className="mb-4">{skill.icon}</div>
             <h3 className="text-lg font-medium mb-2">{skill.title}</h3>
             <p className="text-gray-600 dark:text-gray-300">{skill.description}</p>

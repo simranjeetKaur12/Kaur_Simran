@@ -39,7 +39,7 @@ export const RightSidebar: React.FC = () => {
   };
 
   return (
-    <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-10">
+    <div className="hidden xl:block fixed right-0 top-1/2 transform -translate-y-1/2 z-10">
       <div className="flex flex-col space-y-2">
         {links.map((link, index) => (
           <a
@@ -51,7 +51,7 @@ export const RightSidebar: React.FC = () => {
               e.preventDefault();
               link.onClick?.();
             } : undefined}
-            className={`p-3 bg-white dark:bg-gray-800 shadow-md rounded-l-md transition-all duration-300 flex items-center group text-gray-700 dark:text-gray-300 ${link.color}`}
+            className={`p-2.5 2xl:p-3 bg-white dark:bg-gray-800 shadow-md rounded-l-md transition-all duration-300 flex items-center group text-gray-700 dark:text-gray-300 ${link.color}`}
             aria-label={link.name}
           >
             <div className="flex items-center">

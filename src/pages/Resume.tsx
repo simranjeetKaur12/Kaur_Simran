@@ -53,26 +53,26 @@ export const Resume: React.FC = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="flex justify-between items-center mb-8 pb-4 border-b dark:border-gray-700">
-        <h1 className="text-3xl font-bold">Resume</h1>
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-6 sm:mb-8 pb-4 border-b dark:border-gray-700">
+        <h1 className="text-2xl sm:text-3xl font-bold">Resume</h1>
         <button 
           onClick={handleDownload}
-          className="flex items-center gap-2 px-4 py-2 bg-amber-500 text-white rounded-md hover:bg-amber-600 transition-colors"
+          className="w-full sm:w-auto justify-center sm:justify-start flex items-center gap-2 px-4 py-2 bg-amber-500 text-white rounded-md hover:bg-amber-600 transition-colors"
         >
           <Download size={16} />
           <span>Download CV</span>
         </button>
       </div>
       
-      <div className="mb-12">
-        <div className="flex items-center gap-2 mb-6">
+      <div className="mb-10 sm:mb-12">
+        <div className="flex items-center gap-2 mb-5 sm:mb-6">
           <Briefcase className="text-amber-500" />
-          <h2 className="text-2xl font-medium">Work Experience</h2>
+          <h2 className="text-xl sm:text-2xl font-medium">Work Experience</h2>
         </div>
         
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+            <div key={index} className="bg-white dark:bg-gray-800 p-5 sm:p-6 rounded-lg shadow-sm">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                 <h3 className="text-lg font-medium">{exp.title}</h3>
                 <span className="text-amber-500 font-medium">{exp.period}</span>
@@ -84,15 +84,15 @@ export const Resume: React.FC = () => {
         </div>
       </div>
       
-      <div className="mb-12">
-        <div className="flex items-center gap-2 mb-6">
+      <div className="mb-10 sm:mb-12">
+        <div className="flex items-center gap-2 mb-5 sm:mb-6">
           <GraduationCap className="text-amber-500" />
-          <h2 className="text-2xl font-medium">Education</h2>
+          <h2 className="text-xl sm:text-2xl font-medium">Education</h2>
         </div>
         
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {education.map((edu, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+            <div key={index} className="bg-white dark:bg-gray-800 p-5 sm:p-6 rounded-lg shadow-sm">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                 <h3 className="text-lg font-medium">{edu.degree}</h3>
                 <span className="text-amber-500 font-medium">{edu.period}</span>
@@ -106,8 +106,8 @@ export const Resume: React.FC = () => {
       </div>
       
       <div>
-        <h2 className="text-2xl font-medium mb-6">Skills</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <h2 className="text-xl sm:text-2xl font-medium mb-5 sm:mb-6">Skills</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
           {skills.map((skill, index) => (
             <div key={index}>
               <div className="flex justify-between mb-1">

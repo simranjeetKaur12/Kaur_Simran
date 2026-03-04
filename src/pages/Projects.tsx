@@ -58,14 +58,14 @@ export const Projects: React.FC = () => {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <h1 className="text-3xl font-bold mb-8 pb-4 border-b dark:border-gray-700">My Projects</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-4 border-b dark:border-gray-700">My Projects</h1>
       
-      <div className="flex flex-wrap gap-4 mb-8">
+      <div className="flex flex-wrap gap-2 sm:gap-4 mb-6 sm:mb-8">
         {categories.map(category => (
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`px-4 py-2 rounded-md ${
+            className={`px-3 sm:px-4 py-2 text-sm sm:text-base rounded-md ${
               activeCategory === category
                 ? 'bg-rose-500 text-white'
                 : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
@@ -76,7 +76,7 @@ export const Projects: React.FC = () => {
         ))}
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
         {filteredProjects.map((project, index) => (
           <div key={index} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
             <div className="h-48 overflow-hidden">
