@@ -4,13 +4,19 @@ import { Briefcase, GraduationCap, Download } from 'lucide-react';
 export const Resume: React.FC = () => {
   const experiences = [
     {
-      title: 'ML Engineer',
+      title: 'Personal Project: GrowthEngine - AI-Powered Developer Simulation Platform',
+      tag: 'Personal Project',
+      period: '2026 - Present',
+      description: 'Developed an AI-powered developer simulation platform to bridge the gap between learning and real-world experience.'
+    },
+    {
+      title: 'Personal Project: Cloudburst Risk Estimation System',
       tag: 'Final Capstone Project',
       period: '2026 - Present',
       description: 'Designed and developed an end-to-end machine learning pipeline for cloudburst risk prediction using meteorological and satellite datasets.'
     },
     {
-      title: 'AI Engineer',
+      title: 'Personal Project: ClinIQ - AI-Powered Medical Document Analysis',
       tag: '3rd Year Major Project',
       period: '2025 - 2026',
       description: 'Designed an AI-powered medical document analysis system using OCR + LLMs to extract insights from unstructured PDFs.\nImplemented Retrieval-Augmented Generation (RAG) pipeline with vector embeddings for contextual querying.'

@@ -2,10 +2,21 @@ import React, { useState } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
 export const Projects: React.FC = () => {
-  const categories = ['All', 'Machine Learning', 'Computer Vision', 'NLP', 'RAG'];
+  const categories = ['All', 'Machine Learning', 'Computer Vision', 'NLP', 'RAG','Full Stack'];
   const [activeCategory, setActiveCategory] = useState('All');
   
   const projects = [
+    {
+      title: 'GrowthEngine: AI-Powered Developer Simulation Platform',
+      category: 'Full Stack',
+      image: '/images/lightTheme.png',
+      description: 'AI-powered developer simulation platform that reduces gap between learning and real-world experience. It fetches Github issues and convert them into structured problems for the beginners to solve in the simulated Environment and the solution will be evaluated by AI evaluator and once the issue is resolved , it will guide the users to make a pull request on the original repository.',
+      tags: ['Node.js', 'Next.js', 'OpenAI API','Github API','Github Actions'],
+      links: {
+        live : 'https://example.com/',
+        github: 'https://github.com/simranjeetKaur12/GrowthEngine'
+      }
+    },
     {
       title: 'Cloudburst Risk Estimation System',
       category: 'Machine Learning',
@@ -13,7 +24,7 @@ export const Projects: React.FC = () => {
       description: 'Built a machine learning-based risk prediction system using meteorological and satellite datasets to estimate potential cloudburst events',
       tags: ['Machine Learning', 'Python', 'Scikit-learn', 'Data Analysis'],
       links: {
-        live: 'https://example.com',
+        live: 'https://simranjeetkaur12.github.io/CloudBurst-Risk-Estimation-System/',
         github: 'https://github.com/simranjeetKaur12/CloudBurst-Risk-Estimation-System'
       }
     },
@@ -35,7 +46,7 @@ export const Projects: React.FC = () => {
       description: 'Analyze the performance of various models for license plate recognition such as CNN, R-CNN, tesseract and easyOCR',
       tags: ['Computer Vision', 'YOLO', 'OpenCV', 'Python'],
       links: {
-        live: 'https://example.com',
+        live : 'https://example.com/',
         github: 'https://github.com/simranjeetKaur12/DeepPlateNet'
       }
     },
@@ -46,7 +57,7 @@ export const Projects: React.FC = () => {
       description: 'Built an NLP-based chatbot capable of performing real-time sentiment analysis using transformer-based models.',
       tags: ['NLP', 'Transformers', 'Python', 'Sentiment Analysis'],
       links: {
-        live: 'https://example.com',
+        live : 'https://example.com/',
         github: 'https://github.com/simranjeetKaur12/AI-ChatBot'
       }
     }

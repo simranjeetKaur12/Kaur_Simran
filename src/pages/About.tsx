@@ -45,7 +45,7 @@ export const About: React.FC = () => {
         
         <div className="rounded-lg overflow-hidden h-72 sm:h-80 md:h-full">
           <img 
-            src="/images/aboutphoto.jpeg" 
+            src="/images/phase2.jpeg" 
             alt="AI Development" 
             className="w-full h-full object-cover"
           />

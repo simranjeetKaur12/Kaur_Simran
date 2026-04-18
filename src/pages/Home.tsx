@@ -38,7 +38,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
           <div className="mb-6 sm:mb-8">
             <h2 className="text-xl sm:text-2xl font-medium mb-3 sm:mb-4">A Bit About Me</h2>
             <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg mb-4">
-              Final-year Computer Science student building intelligent systems with real-world impact. Currently developing a Cloudburst Risk Estimation System using machine learning, satellite data, and predictive modeling. Passionate about scalable AI, system design, and solving high-impact environmental problems.
+              Final-year Computer Science student building intelligent systems with real-world impact. Currently developing GrowthEngine: AI-powered Developer Simulation Platform . Passionate about scalable AI, system design, and solving high-impact environmental problems.
             </p>
           </div>
           
